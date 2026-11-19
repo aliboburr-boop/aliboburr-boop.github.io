@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Химический калькулятор ХТИ УрФУ — онлайн анализ молекул, 3D, ИК и ЯМР</title>
+    <meta name="description" content="Бесплатный онлайн химический калькулятор для студентов и преподавателей ХТИ УрФУ: рисование структур, расчет молярной массы, 3D-модель молекулы, предсказание ИК-спектра и калькулятор смесей ЯМР.">
+    <meta name="keywords" content="калькулятор хти урфу, химический калькулятор урфу, хти урфу, калькулятор ямр смесей, ик спектр онлайн, молярная масса онлайн, smiles iupac">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #f8fafc;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #1E3A8A;
+            color: white;
+            padding: 12px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+        header p {
+            margin: 3px 0 0 0;
+            font-size: 13px;
+            color: #dbeafe;
+        }
+        .direct-btn {
+            background-color: #ffffff;
+            color: #1E3A8A;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .direct-btn:hover {
+            background-color: #e0e7ff;
+        }
+        .main-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        iframe {
+            flex-grow: 1;
+            width: 100%;
+            border: none;
+            min-height: 75vh;
+        }
+        .seo-section {
+            background: #ffffff;
+            color: #334155;
+            padding: 16px 24px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        .seo-section h2 {
+            margin: 0 0 8px 0;
+            font-size: 15px;
+            color: #1E3A8A;
+        }
+        .seo-section ul {
+            margin: 0;
+            padding-left: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 4px 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>🧪 Химический калькулятор ХТИ УрФУ</h1>
+            <p>Онлайн-инструмент Химико-технологического института УрФУ для анализа соединений</p>
+        </div>
+        <a href="https://streamlit.app" target="_blank" class="direct-btn">Открыть на весь экран ↗</a>
+    </header>
+
+    <div class="main-content">
+        <iframe src="https://streamlit.app?embed=true" title="Химический калькулятор ХТИ УрФУ"></iframe>
+    </div>
+
+    <section class="seo-section">
+        <h2>Возможности химического калькулятора ХТИ УрФУ:</h2>
+        <ul>
+            <li><strong>2D-редактор структур и SMILES:</strong> генерация названий по IUPAC, расчет молярной массы, LogP, TPSA и проверка по правилу пяти Липинского.</li>
+            <li><strong>3D-визуализация молекул:</strong> интерактивная трехмерная конформация с оптимизацией геометрии.</li>
+            <li><strong>Анализ реакционной способности:</strong> поиск функциональных групп и реакционных центров.</li>
+            <li><strong>ИК-спектр онлайн:</strong> эвристическое предсказание полос поглощения (см⁻¹).</li>
+            <li><strong>Калькулятор смесей по ПМР (ЯМР):</strong> расчет мольных долей компонентов по интегральным интенсивностям.</li>
+            <li><strong>Симулятор реакций:</strong> моделирование электрофильного замещения (нитрование, бромирование, сульфирование).</li>
+        </ul>
+    </section>
+
+</body>
+</html>
